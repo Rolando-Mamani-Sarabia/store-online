@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #2f3e46;
+    text-align: center;
+    background-color: #f1f5f2; /* color de respaldo */
+    background-image: url('../images/fondoBody.png');
+    background-size: cover;     /* ajusta la imagen completa sin recortar */
+    background-position: center;  /* centrada */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* efecto parallax: la imagen se queda fija */
+}
+
+
+.header {
+    padding: 50px;
+    background: #354f52; /* verde oscuro */
+    color: #cad2c5; /* verde gris claro */
+}
+
+.titulo-principal {
+    font-size: 2.5em;
+    color: #84a98c; /* verde suave */
+}
+
+.contenido {
+    padding: 20px;
+    background: #ffffff;
+    color: #2f3e46;
+    border-radius: 8px;
+}
+
+.footer {
+    padding: 10px;
+    background: #354f52;
+    color: #cad2c5;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
