@@ -4,7 +4,6 @@ body {
     color: #2f3e46;
     text-align: center;
     background-color: #354f52;
-    background-image: url('fondo_main.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,23 +26,6 @@ body {
     margin: 0;
 }
 
-.contenido {
-    padding: 20px;
-    background: #ffffff;
-    color: #2f3e46;
-    border-radius: 5px;
-}
-
-.footer {
-    padding: 6px;
-    background: #354f52;
-    color: #f8f5f5;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-
 .menu ul {
     list-style: none;
     margin: 0;
@@ -59,6 +41,143 @@ body {
     font-weight: bold;
 }
 
+.contenido {
+    padding: 20px;
+    background: #ffffff;
+    color: #2f3e46;
+    border-radius: 5px;
+}
+
+#inicio {
+    padding: 15px 0 30px;
+}
+
+.descripcion {
+    font-size: 1.1em;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* catalogo */
+
+.catalogo {
+    padding: 25px 0 40px;
+}
+
+.catalogo h2,
+#contacto h2 {
+    font-size: 1.8em;
+    color: #354f52;
+    margin-bottom: 15px;
+}
+
+.catalogo > p {
+    color: #667575;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* categorias tenis */
+
+.categoria {
+    background-color: #ffffff;
+    border: 1px solid #e7e7ed;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.categoria img {
+    width: 100%;
+    height: 190px;
+    border-radius: 6px;
+}
+
+.categoria h3 {
+    color: #354f52;
+    font-size: 1.15em;
+    margin: 18px 0 10px;
+}
+
+.categoria p {
+    color: #667575;
+    min-height:10px;
+}
+
+.categoria button {
+    background-color: #354f52;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 16px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+/* formulario de contacto */
+
+#contacto {
+    max-width: 350px;
+    margin: 10px auto;
+    margin-bottom: 60px;
+    padding: 20px;
+    background-color: #f4f7f5;
+    border-radius: 10px;
+    text-align: left;
+}
+
+#contacto h2 {
+    text-align: center;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+#contacto input,
+#contacto textarea {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #cbd5d0;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contacto textarea {
+    min-height: 120px;
+}
+
+#contacto button {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #354f52;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 0px;
+    background: #354f52;
+    color: #f8f5f5;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
 @media (max-width: 600px) {
     .header {
