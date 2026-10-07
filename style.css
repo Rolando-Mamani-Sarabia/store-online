@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #2f3e46;
+    text-align: center;
+    background-color: black;
+    background-image: url('fondo_main.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header {
+    padding: 50px;
+    background: #354f52;
+    color: #cad2c5;
+}
+
+.titulo-principal {
+    font-size: 3em;
+    color: #e7eee7;
+}
+
+.contenido {
+    padding: 20px;
+    background: #ffffff;
+    color: #2f3e46;
+    border-radius: 5px;
+}
+
+.footer {
+    padding: 6px;
+    background: #354f52;
+    color: #f8f5f5;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
