@@ -1,3 +1,4 @@
+/* estilo general */
 body {
     margin: 0;
     font-family: 'Roboto', Arial, sans-serif;
@@ -8,9 +9,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
 }
 
+/* encabezado */
 .header {
     display: flex;
     justify-content: space-between;
@@ -26,6 +27,8 @@ body {
     margin: 0;
 }
 
+
+/* menu */
 .menu ul {
     list-style: none;
     margin: 0;
@@ -41,6 +44,8 @@ body {
     font-weight: bold;
 }
 
+
+/* contenido */
 .contenido {
     padding: 20px;
     background: #ffffff;
@@ -59,8 +64,8 @@ body {
     margin: 0 auto;
 }
 
-/* catalogo */
 
+/* catalogo */
 .catalogo {
     padding: 25px 0 40px;
 }
@@ -87,8 +92,7 @@ body {
 }
 
 
-/* categorias tenis */
-
+/* categorias-tenis */
 .categoria {
     background-color: #ffffff;
     border: 1px solid #e7e7ed;
@@ -100,6 +104,8 @@ body {
     width: 100%;
     height: 190px;
     border-radius: 6px;
+    object-fit: contain;
+    display: block;
 }
 
 .categoria h3 {
@@ -110,7 +116,7 @@ body {
 
 .categoria p {
     color: #667575;
-    min-height:10px;
+    min-height: 10px;
 }
 
 .categoria button {
@@ -123,10 +129,12 @@ body {
     cursor: pointer;
 }
 
-/* formulario de contacto */
 
+/* formulario de contacto */
 #contacto {
+    width: 100%;
     max-width: 350px;
+    box-sizing: border-box;
     margin: 10px auto;
     margin-bottom: 60px;
     padding: 20px;
@@ -145,10 +153,10 @@ body {
     gap: 5px;
 }
 
-
 #contacto input,
 #contacto textarea {
-    width: 95%;
+    box-sizing: border-box;
+    width: 100%;
     padding: 8px;
     border: 1px solid #cbd5d0;
     border-radius: 5px;
@@ -170,22 +178,54 @@ body {
     cursor: pointer;
 }
 
+
+/* footer */
 .footer {
-    padding: 0px;
+    padding: 10px;
     background: #354f52;
     color: #f8f5f5;
-    position: fixed;
-    bottom: 0;
+    position: static;
     width: 100%;
 }
 
+/* media queri */
 @media (max-width: 600px) {
     .header {
         flex-direction: column;
         gap: 10px;
+        padding: 25px 15px;
     }
+
     .menu ul {
         flex-direction: column;
         gap: 10px;
     }
+
+    .contenido {
+        padding: 15px 12px;
+    }
+
+    .titulo-principal {
+        font-size: 1.3em;
+    }
+
+    .catalogo h2,
+    #contacto h2 {
+        font-size: 1.5em;
+    }
+
+    .categorias {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    #contacto {
+        width: 100%;
+        max-width: 350px;
+        padding: 15px;
+    }
+
+    .categoria button {
+        max-width: 100%;
+    }
+
 }
