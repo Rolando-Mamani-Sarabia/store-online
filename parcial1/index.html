@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Floreria la Orquidea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Cabecera con menui -->
+    <header class="header">
+        <h1 class="titulo-principal">Florería la Orquídea</h1>
+          <nav class="menu">
+              <ul>
+                  <li><a href="#inicio">Inicio</a></li>
+                  <li><a href="#productos">Nuestros Arreglos</a></li>
+                  <li><a href="#contacto">Contacto</a></li>
+              </ul>
+          </nav>
+      </header>
+
+      <!-- Contenido floreria -->
+      <main class="contenido">
+        <section class="catalogo" id="productos">
+      
+          <h2>Nuestros Arreglos</h2>
+          <p>Una breve presentación de la floreria y sus productos</p>
+      
+          <div class="categorias">
+      
+              <!-- Rosas -->
+              <article class="categoria" id="casuales">
+                  <img src="casuales.jpg">
+      
+                  <h3>Ramo de Rosas</h3>
+                  <p>Precio: BS 60</p>
+
+              </article>
+      
+              <!-- Girasoles -->
+              <article class="categoria" id="deportivos">
+                  <img src="deportivos.png">
+      
+                  <h3>Ramo de Girasoless</h3>
+                  <p>Precio: BS 3   0</p>
+
+              </article>
+      
+              <!-- Macetas -->
+              <article class="categoria" id="running">
+                  <img src="running.png">
+      
+                  <h3>Planta de Macetas</h3>
+                  <p>Precio: BS 20</p>
+
+              </article>
+          </div>
+        </section>
+      
+        <!-- Formulario -->
+        <section id="contacto">
+          <h2>Encarga tus Flores</h2>
+          <form>
+              <label for="nombre">Nombre Completo:</label>
+              <input type="text" id="nombre" name="nombre" required>
+      
+              <label for="correo">Correo electrónico:</label>
+              <input type="email" id="correo" name="correo" required>
+      
+              <label for="mensaje">Detalle del pedido</label>
+              <textarea id="mensaje" name="mensaje" required></textarea>
+      
+              <button type="submit">Hacer mi pedido</button>
+          </form>
+      </section>
+      
+      </main>
+
+      <footer class="footer">
+        <p class="coryrigth">&copy; Parcial 1 - Rolando Mamani Sarabia - 12 de octubre de 2026 </p>
+      </footer>
+
+</body>
+</html>
