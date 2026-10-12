@@ -27,6 +27,18 @@ body {
     margin: 0;
 }
 
+/* boton modo de dia/noche */
+.boton-modo {
+    margin-top: 14;
+    background-color: sandybrown;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 18px;
+    font: inherit;
+    font-weight: bold;
+}
+
 
 /* menu */
 .menu ul {
@@ -188,8 +200,104 @@ body {
     width: 100%;
 }
 
+/* boton menu */
+#btn-menu{
+    display: none;
+}
+
+
+/* botron + js - modo noche */
+body.noche {
+    background-color: #121817;
+    color: #e7eee7;
+}
+
+body.noche .header {
+    background-color: #1b2928;
+    color: #e7eee7;
+}
+
+body.noche .titulo-principal {
+    color: #ffffff;
+}
+
+body.noche .menu a {
+    color: #e7eee7;
+}
+
+body.noche .contenido {
+    background-color: #202b2a;
+    color: #e7eee7;
+}
+
+body.noche .catalogo h2,
+body.noche #contacto h2,
+body.noche .categoria h3 {
+    color: #cad2c5;
+}
+
+body.noche .catalogo > p,
+body.noche .categoria p {
+    color: #c0cbc6;
+}
+
+body.noche .categoria {
+    background-color: #293634;
+    border-color: #455550;
+}
+
+body.noche #contacto {
+    background-color: #293634;
+}
+
+body.noche #contacto label {
+    color: #e7eee7;
+}
+
+body.noche #contacto input,
+body.noche #contacto textarea {
+    background-color: #182220;
+    color: #ffffff;
+    border-color: #52635c;
+}
+
+body.noche .categoria button,
+body.noche #contacto button {
+    background-color: #52796f;
+    color: #ffffff;
+}
+
+body.noche .boton-modo {
+    background-color: #354f52;
+    color: #ffffff;
+}
+
+body.noche .footer {
+    background-color: #1b2928;
+    color: #e7eee7;
+}
+
+
 /* media queri */
 @media (max-width: 600px) {
+
+    /* accion boton amburguessa*/
+    #btn-menu{
+        display: block;
+    }
+
+    .header .menu ul{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu ul.abierto{
+        display: flex;
+    }
+    /*-------------------------------------*/
+
     .header {
         flex-direction: column;
         gap: 10px;
@@ -229,3 +337,6 @@ body {
     }
 
 }
+
+
+
