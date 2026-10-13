@@ -120,6 +120,10 @@ button {
     margin: 0;
 }
 
+/*se oculta el mensaje*/
+.oculto {
+    display: none;
+}
 
 @media (max-width: 600px) {
     .menu ul {
