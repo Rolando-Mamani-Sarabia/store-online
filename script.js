@@ -30,3 +30,5 @@ function alternarMenu(){
 }
 
 botonMenu.addEventListener("click", alternarMenu)
+
+/* Realizando pruebas de acceso a modificacion (Cuenta Secundaria --> RolandoMSDev) */
