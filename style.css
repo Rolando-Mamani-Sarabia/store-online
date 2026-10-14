@@ -190,6 +190,35 @@ body {
     cursor: pointer;
 }
 
+/* parrafo mensaje */
+
+.aviso {
+    display: none;
+    margin-top: 14px;
+    padding: 12px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+
+.aviso.error {
+    display: block;
+    background-color: #be141dcf;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.aviso.exito {
+    display: block;
+    background-color: rgb(107, 178, 117);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+
 
 /* footer */
 .footer {
