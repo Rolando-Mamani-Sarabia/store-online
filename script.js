@@ -31,9 +31,7 @@ function alternarMenu(){
 
 botonMenu.addEventListener("click", alternarMenu)
 
-<<<<<<< HEAD
 /* Realizando pruebas de acceso a modificacion (Cuenta Secundaria --> RolandoMSDev) */
-=======
 
 /* funsion que muestra alertas de formulario en html */
 const formularioPedido = document.querySelector("#form-contacto");
@@ -65,4 +63,3 @@ function revisarPedido(event){
 }
 
 formularioPedido.addEventListener("submit", revisarPedido);
->>>>>>> 3ec4f3c (se implemento la validacion de datos del formulario)
