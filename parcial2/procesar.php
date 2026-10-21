@@ -1,18 +1,4 @@
 <?php
-
-    $nombre  = $_POST["nombre"];
-    $correo  = $_POST["correo"];
-    $mensaje = $_POST["mascota"];
-    
-
-    echo "<h2>Datos recibidos:</h2>";
-    echo "<p>Nombre: $nombre</p>";
-    echo "<p>Correo: $correo</p>";
-    echo "<p>Mensaje: $mensaje</p>";
-
-?>
-
-<?php
 $nombre = $_POST["nombre"];
 $correo = $_POST["correo"];
 $mascota = $_POST["mascota"];

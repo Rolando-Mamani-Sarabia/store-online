@@ -1,41 +1,126 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Veterinaria Patitas</title>
-</head>
-<body>
 
-  <header>
-    <h1>Veterinaria Patitas</h1>
-    <p>
-      Somos una veterinaria de barrio que cuida a tu mascota como si fuera de la familia.
-      Reservá tu turno online de forma rápida y sencilla.
-    </p>
-  </header>
+body {
+    margin: 0;
+    font-family: monospace, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    text-align: center;
+}
 
-  <main>
-    <form id="form-turno" novalidate method="POST" action="procesar.php">
 
-      <label for="nombre">Nombre completo</label>
-      <input type="text" id="nombre" name="nombre" required>
+header {
+    padding: 30px 20px;
+    background-color: #f7f7f7;
+    border-bottom: 4px solid #070707;
+}
 
-      <label for="correo">Correo electrónico</label>
-      <input type="email" id="correo" name="correo" required>
+header h1 {
+    margin: 0 0 10px;
+    color: #070707;
+    font-size: 2em;
+}
 
-      <label for="mascota">Contanos de tu mascota</label>
-      <textarea id="mascota" name="mascota"></textarea>
+header p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 2;
+}
 
-      <button type="submit">Reservar mi turno</button>
-      <p id="aviso-turno" class="aviso"></p>
+main {
+    padding: 15px 20px;
+}
 
-    </form>
-  </main>
+#form-turno {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 3px solid #0b0b0b;
+    border-radius: 10px;
+    text-align: left;
+    box-sizing: border-box;
+}
 
-  <footer>
-    <p>Parcial 2 - [tu nombre completo] - 20 de octubre de 2026</p>
-  </footer>
+#form-turno label {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #000000;
+}
 
-</body>
-</html>
+#form-turno input,
+#form-turno textarea {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #060606;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+#form-turno textarea {
+    min-height: 100px;
+}
+
+#form-turno button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #fcfcfc;
+    color: #070606;
+    border: none;
+    border: 2px solid #060606;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.aviso {
+    display: none;
+    margin-top: 14px;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.aviso.error {
+    display: block;
+    background-color: #f9f7f7;
+    color: #040404;
+    border: 2px solid #060606;
+}
+
+.aviso.exito {
+    display: block;
+    background-color: #f9f7f7;
+    color: #040404;
+    border: 2px solid #060606;
+}
+
+
+footer {
+    padding: 10px;
+    background-color: #040404;
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header {
+        padding: 20px 15px;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
+    #form-turno {
+        padding: 15px;
+    }
+}
