@@ -1,5 +1,6 @@
       
-      
+@extends('layout.base')
+@section('contenido')
       
       <form id="form-contacto" method="POST" action="procesar.php" novalidate >
           <label for="nombre">Nombre:</label>
@@ -16,3 +17,5 @@
           <p id="aviso-contacto" class="aviso"> </p>
 
       </form>
+      
+@endsection
