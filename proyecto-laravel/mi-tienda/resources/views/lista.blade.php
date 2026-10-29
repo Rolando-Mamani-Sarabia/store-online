@@ -1,7 +1,7 @@
 
 
 
-@extends('layouts.app')
+@extends('layout.app')
 
 @section('contenido')
     <p>Bienvenido a nuestro estante de juguetes</p>

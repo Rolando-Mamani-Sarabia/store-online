@@ -56,6 +56,16 @@ body {
     font-weight: bold;
 }
 
+#productoss{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
 
 /* contenido */
 .contenido {
@@ -70,10 +80,18 @@ body {
 }
 
 .descripcion {
-    font-size: 1.1em;
-    line-height: 1.7;
-    max-width: 700px;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: center;
+    max-width: 800px;
     margin: 0 auto;
+    padding: 30px 40px;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 
