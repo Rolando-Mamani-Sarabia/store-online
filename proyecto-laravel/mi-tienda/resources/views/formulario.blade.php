@@ -24,6 +24,11 @@
 
         <br><br>
 
+        <label for="stock">Stock</label>
+        <input type="number" id="stock" name="stock" value="{{ old('stock') }}">
+
+        <br><br>
+
         <button type="submit">Registrar juguete</button>
     </form>
 @endsection

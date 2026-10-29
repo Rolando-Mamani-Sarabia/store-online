@@ -15,7 +15,7 @@
 
                 <h3>{{ $t->marca }} {{ $t->modelo }}</h3>
                 <p>{{ $t->descripcion }}</p>
-                <p>Talla {{ $t->talla }} - {{ $t->precio }} Bs</p>
+                <p>Talla {{$t->talla  }} - {{ $t->precio }} Bs</p>
                 <p>Categoría: {{ $t->categoria }}</p>
 
                 <button type="button">Añadir al carrito</button>

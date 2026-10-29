@@ -31,6 +31,7 @@
         <textarea id="mensaje" name="mensaje" required>{{ old('mensaje') }}</textarea>
 
         <button type="submit">Enviar mensaje</button>
+        <p id="aviso-contacto" class="aviso"> </p>
     </form>
   </section>
 
